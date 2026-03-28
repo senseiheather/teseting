@@ -13,6 +13,11 @@ namespace formatting {
 
     }
 
+    //% block="Find Average Number
+    export function avgNum(arr: array, speak: sprite){
+        effects.blizzard.startScreenEffect(1000)
+    }
+
     //% block="bar x = $x text = $text"
     export function bar(x: number, text: string) {
 
