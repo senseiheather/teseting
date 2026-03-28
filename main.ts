@@ -12,10 +12,6 @@ namespace formatting {
 
     }
 
-    //% block="testFunction does stuff = $text"
-    export function testFunction(text: string){
-        game.splash(text)
-    }
     //% block="bar x = $x text = $text"
     export function bar(x: number, text: string) {
 
@@ -26,4 +22,3 @@ namespace formatting {
 
     }
 }
-
