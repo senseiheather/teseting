@@ -9,6 +9,7 @@ namespace formatting {
 
     //% block="fooooooo"
     export function foo() {
+        effects.blizzard.startScreenEffect(500)
 
     }
 
