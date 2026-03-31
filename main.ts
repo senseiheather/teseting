@@ -13,18 +13,7 @@ namespace formatting {
 
     }
 
-    //% block="testing" 
-    export function sortNums(avgArray: any[], spriteSpeaking: Sprite) {
-    if (avgArray.length > 0) {
-        averageAge = 0
-        for (let value of numList) {
-            averageAge += value
-            spriteSpeaking.sayText(convertToText(value), 500, true)
-            pause(500)
-        }
-        pause(2000)
-    }
-}
+    
 
     //% block="shuffled text = $text x = $x"
     export function shuffled(x: number, text: string) {
@@ -35,17 +24,12 @@ namespace formatting {
 namespace language{
 
     
-    export function sortNums(avgArray: any[], spriteSpeaking: Sprite) {
-    if (avgArray.length > 0) {
-        averageAge = 0
-        for (let value of numList) {
-            averageAge += value
-            spriteSpeaking.sayText(convertToText(value), 500, true)
-            pause(500)
-        }
-        pause(2000)
+     //% block
+    export function statementWith5Arguments(arg1: number[],
+        arg2: number, arg3: number,
+        arg4: number, arg5: number) {
+        
     }
-}
 
 
     
