@@ -38,7 +38,7 @@ export function avgAgesortNums(avgArray: number[], spriteSpeaking: Sprite) {
     if (avgArray.length > 0) {
         
         for (let value of avgArray) {
-            averageAge += value
+            //averageAge += value
             spriteSpeaking.sayText(convertToText(value), 500, true)
             pause(500)
         }
