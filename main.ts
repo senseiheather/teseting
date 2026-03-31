@@ -31,3 +31,22 @@ namespace formatting {
 
     }
 }
+
+namespace language{
+
+    
+    export function sortNums(avgArray: any[], spriteSpeaking: Sprite) {
+    if (avgArray.length > 0) {
+        averageAge = 0
+        for (let value of numList) {
+            averageAge += value
+            spriteSpeaking.sayText(convertToText(value), 500, true)
+            pause(500)
+        }
+        pause(2000)
+    }
+}
+
+
+    
+} 
