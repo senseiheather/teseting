@@ -43,6 +43,7 @@ export function avgAgesortNums(avgArray: number[], spriteSpeaking: Sprite) {
             spriteSpeaking.sayText(convertToText(value), 500, true)
             pause(500)
         }
+        averageAge = averageAge / avgArray.length
         spriteSpeaking.sayText("The average age is " + convertToText(averageAge)) 
         pause(2000)
     }
