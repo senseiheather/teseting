@@ -33,9 +33,10 @@ namespace language{
 
     /*
     *@param spriteSpeaking 
+    *@param avgArray
     */
     //% spriteSpeaking.shadow="variables_get" spriteSPeaking.defl="mySprite"
-    //%block 
+    //%block="Get average of $avgArray from $spriteSpeaking"
 export function avgAgesortNums(avgArray: number[], spriteSpeaking: Sprite) {
         let averageAge = 0
 
