@@ -86,19 +86,21 @@ export function avgAgesortNums(avgArray: number[], spriteSpeaking: Sprite) {
     /*
     *@param ans
     *@param counter
+    */
     //% ans.shadow="variables_list" ans.delf="answers" 
     //% counter.shadow="variables_list" counter.delf="counter" 
-    */ 
+    //block="create survey from $ans and $counter" 
     export function createSurvey (ans: string[], counter: number[]) {
     ans.shift()
     counter.shift()
     game.showLongText("You will ask someone about their favorite thing! Each answer will need to be a single word", DialogLayout.Center)
     let ques = game.askForString("What favorite thing should they list?")
+    let theQues = ques
     for (let index = 0; index < 4; index++) {
         answer1 = game.askForString("Add one choice for the player(s) to answer")
         ans.push(answer1)
         counter.push(index)
     }
-    return ques
+    return theQues
 }
 } 
