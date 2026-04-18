@@ -37,7 +37,7 @@ export function avgAgesortNums(avgArray: number[], spriteSpeaking: Sprite) {
     //% numberArray.shadow="variables_get" numberArray.delf="list" 
     //%block="Ask for age from $numberArray"
     export function askQuestion (numberArray: number[]) {
-    numberArray.push(game.askForNumber("How old are you?", 2)
+    numberArray.push(game.askForNumber("How old are you?", 2))
 }
 
 
