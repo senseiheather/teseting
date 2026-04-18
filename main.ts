@@ -4,32 +4,10 @@
  * each variable in any order using the $VARIABLE syntax.
  */
 
-//% color="#AA278D"
-namespace formatting {
 
-    //% block="fooooooo"
-    export function foo() {
-        effects.blizzard.startScreenEffect(500)
 
-    }
+namespace trainAI{
 
-    
-
-    //% block="shuffled text = $text x = $x"
-    export function shuffled(x: number, text: string) {
-
-    }
-}
-
-namespace language{
-
-    
-     //% block
-    export function statementWith5Arguments(arg1: number[],
-        arg2: number, arg3: number,
-        arg4: number, arg5: number) {
-        
-    }
 
     /*
     *@param spriteSpeaking 
@@ -59,7 +37,7 @@ export function avgAgesortNums(avgArray: number[], spriteSpeaking: Sprite) {
     //% numberArray.shadow="variables_get" numberArray.delf="list" 
     //%block="Ask for age from $numberArray"
     export function askQuestion (numberArray: number[]) {
-    list.push(game.askForNumber("How old are you?"), 2)
+    numberArray.push(game.askForNumber("How old are you?"), 2)
 }
 
 
@@ -93,9 +71,9 @@ export function avgAgesortNums(avgArray: number[], spriteSpeaking: Sprite) {
     //%block="Use $answerList for choices, $answerCounter for votes, and $fave to find the favorite"  
     */ 
     export function checkFavorite (answerList: any[], answerCounter: any[], fave: string) {
-    biggestNum = 0
-    counter = 0
-    checkVal = 0
+    let biggestNum = 0
+    let counter = 0
+    let checkVal = 0
     for (let value of answerCounter) {
         if (value > biggestNum) {
             biggestNum = value
@@ -115,11 +93,11 @@ export function avgAgesortNums(avgArray: number[], spriteSpeaking: Sprite) {
     ans.shift()
     counter.shift()
     game.showLongText("You will ask someone about their favorite thing! Each answer will need to be a single word", DialogLayout.Center)
-    ques = game.askForString("What favorite thing should they list?")
+    let ques = game.askForString("What favorite thing should they list?")
     for (let index = 0; index < 4; index++) {
         answer1 = game.askForString("Add one choice for the player(s) to answer")
         ans.push(answer1)
-        counter.push(0)
+        counter.push(index)
     }
     return ques
 }
