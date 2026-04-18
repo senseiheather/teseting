@@ -70,7 +70,7 @@ export function avgAgesortNums(avgArray: number[], spriteSpeaking: Sprite) {
     //% fave.shadow="variables_get" fave.delf="string" 
     //%block="Use $answerList for choices, $answerCounter for votes, and $fave to find the favorite"  
     */ 
-    export function checkFavorite (answerList: any[], answerCounter: any[], fave: string) {
+    export function checkFavorite (answerList: string[], answerCounter: number[], fave: string) {
     let biggestNum = 0
     let counter = 0
     let checkVal = 0
